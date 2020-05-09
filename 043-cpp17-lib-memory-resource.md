@@ -369,8 +369,8 @@ public :
         // アライメント要求に注意
     }
 
-    virtual void * 
-    do_deallocate( std::size_t bytes, std::size_t alignment ) override
+    virtual void 
+    do_deallocate( void * p, std::size_t bytes, std::size_t alignment ) override
     {
         std::scoped_lock lock( m ) ;
         // リンクリストから該当する部分を削除
