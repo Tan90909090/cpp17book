@@ -348,7 +348,7 @@ void f()
 }
 ~~~
 
-もし、どうしても`constexpr`文の条件に合うときにだけ`static_assert`が使いたい場合もある。これは、`constexpr if`をネストしたりしていて、その内容を全部`static_assert`に書くのが冗長な場合だ。
+しかし、どうしても`constexpr`文の条件に合うときにだけ`static_assert`を使いたい場合もある。これは、`constexpr if`をネストしたりしていて、その内容を全部`static_assert`に書くのが冗長な場合だ。
 
 ~~~cpp
 template < typename T >
